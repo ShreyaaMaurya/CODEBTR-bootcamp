@@ -1027,8 +1027,16 @@ body {
     .pitch-right-box { display: flex; flex-direction: column; align-items: center; }
     .matrix-header-block h2 { font-size: 1.6rem; }
     .matrix-features-grid { grid-template-columns: 1fr; gap: 16px; }
-    .footer-top-container { grid-template-columns: 1fr 1fr; gap: 40px; padding-bottom: 40px; }
-    .footer-brand-column { grid-column: span 2; text-align: center; display: flex; flex-direction: column; align-items: center; }
+    .footer-top-container { 
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 32px; 
+        padding-bottom: 40px; 
+    }
+    .footer-brand-column { 
+        grid-column: span 1; 
+        align-items: flex-start; 
+        text-align: left; 
+    }
 }
 
 @media (max-width: 768px) {
@@ -1037,14 +1045,56 @@ body {
     .banner-heading-text { font-size: 0.75rem; }
     .banner-pitch-text { font-size: 0.85rem; }
     .banner-main-title { font-size: 1.1rem; }
+    
+    /* Footer responsiveness - Tablet view: perfect 2-column grid */
+    .footer-top-container { 
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 30px; 
+        padding-bottom: 30px; 
+    }
 }
 
 @media (max-width: 480px) {
-    .footer-top-container { grid-template-columns: 1fr; text-align: center; gap: 32px; }
-    .footer-brand-column { grid-column: span 1; }
-    .column-title::after { left: 50%; transform: translateX(-50%); }
-    .link-list li a:hover { padding-left: 0; }
-    .link-list li a:hover::before { display: none; }
+    /* Footer responsiveness - Mobile view: centered 1-column list */
+    .footer-top-container { 
+        grid-template-columns: 1fr; 
+        text-align: center; 
+        gap: 32px; 
+        padding-bottom: 24px;
+    }
+    .footer-brand-column { 
+        grid-column: span 1; 
+        align-items: center; 
+        text-align: center;
+    }
+    .footer-links-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .link-list {
+        align-items: center;
+        text-align: center;
+    }
+    .column-title::after { 
+        left: 50%; 
+        transform: translateX(-50%); 
+    }
+    .link-list li a:hover { 
+        padding-left: 0; 
+    }
+    .link-list li a:hover::before { 
+        display: none; 
+    }
+    .footer-divider {
+        display: none;
+    }
+    .footer-bottom-ribbon p {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        line-height: 1.5;
+    }
 }
 
 /* --- Floating Persistent Buttons --- */

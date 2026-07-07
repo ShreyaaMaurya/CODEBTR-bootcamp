@@ -134,8 +134,8 @@ export default function App() {
       </main>
 
       {/* Overview Content Section */}
-      <section className="overview-section reveal-on-scroll fade-in-up" id="about">
-        <div className="overview-container">
+      <section className="overview-section" id="about">
+        <div className="overview-container reveal-on-scroll fade-in-up">
           <h2 className="overview-title">Core<span>BTR</span> Bootcamp</h2>
           <p className="overview-subtitle">Learn with Dr. Zainab Vora. Transform with the System.</p>
           <p className="overview-body-text">
@@ -204,8 +204,8 @@ export default function App() {
       </section>
 
       {/* Important Notice Section */}
-      <section className="notice-schedule-section reveal-on-scroll fade-in-up">
-        <div className="notice-schedule-container">
+      <section className="notice-schedule-section">
+        <div className="notice-schedule-container reveal-on-scroll fade-in-up">
           <h3 className="notice-heading">Important Notice</h3>
           <ul className="notice-list">
             <li>Seats cannot be cancelled or transferred to anyone, including friends.</li>
@@ -254,8 +254,8 @@ export default function App() {
       </section>
 
       {/* Interactive State-Driven Carousel Section */}
-      <section className="prefer-section reveal-on-scroll fade-in-up">
-        <div className="prefer-container">
+      <section className="prefer-section">
+        <div className="prefer-container reveal-on-scroll fade-in-up">
           <div className="prefer-tagline">What's Inside</div>
           <h2 className="prefer-main-title">Why Students Prefer Core<span>BTR</span> Bootcamp</h2>
           <p className="prefer-description">Great preparation is built on both the right learning and the right environment. <strong>At coreBTR Bootcamp, structured teaching goes hand in hand with discipline, guidance, and a system designed to keep you consistent.</strong> That's what makes the experience at Vidya Jeevan Experience Centre different—<strong>it's not just a venue but a thoughtfully built ecosystem shaped by the journeys of thousands of students.</strong></p>
@@ -354,8 +354,8 @@ export default function App() {
       </section>
 
       {/* Pitch Banner Ribbon */}
-      <section className="pitch-banner-wrapper reveal-on-scroll fade-in-up">
-        <div className="pitch-banner-container">
+      <section className="pitch-banner-wrapper">
+        <div className="pitch-banner-container reveal-on-scroll fade-in-up">
           <div className="pitch-left-box">
             <span className="orange-indicator-line"></span>
             <h2>Why Students Choose coreBTR Bootcamp</h2>
@@ -533,7 +533,7 @@ export default function App() {
         </div>
 
         <div className="footer-bottom-ribbon">
-          <p>&copy; 2026 CoreBTR, All rights reserved. | <span className="manage-text">Designed & Managed By:</span> <a href="#destination" className="author-anchor">Believers Destination Pvt Ltd</a></p>
+          <p>&copy; 2026 CoreBTR, All rights reserved. <span className="footer-divider">|</span> <span className="manage-text">Designed & Managed By:</span> <a href="#destination" className="author-anchor">Believers Destination Pvt Ltd</a></p>
         </div>
       </footer>
 
